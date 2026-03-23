@@ -37,6 +37,7 @@ blocks:
             - checkout
             - cache restore
             - make lint
+            - cache store
       agent:
         machine:
           type: e1-standard-2
