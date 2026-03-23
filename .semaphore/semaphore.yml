@@ -65,6 +65,6 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            - make app
+            - make build
             - echo hello
-            - artifact push workflow app
+            - artifact push workflow dist/*.whl
