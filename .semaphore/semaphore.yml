@@ -35,6 +35,7 @@ blocks:
         - name: ✨ Lint and Format
           commands:
             - checkout
+            - 'export PATH=$HOME/.local/bin:$PATH'
             - cache restore
             - make lint
             - cache store
