@@ -31,6 +31,7 @@ blocks:
       jobs:
         - name: ✨ Lint and Format
           commands:
+            - cache restore
             - make lint
       agent:
         machine:
@@ -44,6 +45,7 @@ blocks:
       jobs:
         - name: "\U0001F7E2 Pytest"
           commands:
+            - cache restore
             - make test
       agent:
         machine:
