@@ -50,7 +50,6 @@ blocks:
         - name: "\U0001F7E2 Pytest"
           commands:
             - checkout
-            - cache restore
             - make test
       agent:
         machine:
