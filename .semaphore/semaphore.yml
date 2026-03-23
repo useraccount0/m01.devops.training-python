@@ -57,3 +57,14 @@ blocks:
         machine:
           type: e1-standard-2
           os_image: ubuntu2404
+  - name: 'Block #4'
+    dependencies:
+      - "\U0001F9EA Test Suite"
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - checkout
+            - make app
+            - echo hello
+            - artifact push workflow app
