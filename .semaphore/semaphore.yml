@@ -56,7 +56,7 @@ blocks:
         machine:
           type: e1-standard-2
           os_image: ubuntu2404
-  - name: 'Block #4'
+  - name: Build
     dependencies:
       - "\U0001F50D Code Quality"
       - "\U0001F9EA Test Suite"
